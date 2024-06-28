@@ -350,4 +350,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 </script>
+  <script>
+  document.querySelectorAll('.swiper-slide img').forEach(img => {
+                    img.addEventListener('mouseenter', () => {
+                        swiper.autoplay.stop();
+                    });
+                    img.addEventListener('mouseleave', () => {
+                        swiper.autoplay.start();
+                    });
+                });
+</script>
 </html>
